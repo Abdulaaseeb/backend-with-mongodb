@@ -13,7 +13,9 @@ const CourseScheema = mongoose.Schema({
         enum: ['pending' , 'completed'],
         default : 'pending'
 
-    }
+    },
+    assignedTo: { type: mongoose.Schema.Types.ObjectId, ref: '/users' },
+    team: { type: mongoose.Schema.Types.ObjectId, ref: 'Team' },
 },
 {
     timestamps:true
