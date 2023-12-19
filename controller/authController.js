@@ -6,8 +6,8 @@ const AuthModel = require("../models/authModel")
 const AuthController = {
     signUp: async (req, res) => {
         try {
-            const { email, password, contactNo , firstName, lastName ,   } = req.body
-            const obj = { email, password, contactNo ,  firstName , lastName, }
+            const { email, password,   firstName, lastName ,   } = req.body
+            const obj = { email, password,   firstName , lastName, }
             const errArr = []
             if (!obj.email) {
                 errArr.push("Email is required")

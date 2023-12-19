@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+
 const CourseScheema = mongoose.Schema({
     Title: {
         type: String,

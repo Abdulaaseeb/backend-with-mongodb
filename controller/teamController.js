@@ -8,13 +8,13 @@ const TeamController = {
       // Assuming that the request body contains team name and an array of user IDs
       const { name, members } = req.body;
 
-      // Create a new team
+      
       const newTeam = await Team.create({
         name,
         members: members || [], // If members array is not provided, default to an empty array
       });
 
-      // Add the team ID to each user's list of teams
+     
       if (members && members.length > 0) {
         await AuthModel.updateMany(
           { _id: { $in: members } },

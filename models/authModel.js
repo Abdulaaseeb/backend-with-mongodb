@@ -8,10 +8,7 @@ const AuthScheema = mongoose.Schema({
         type: String,
         require: (true  , "Password must  required")
     },
-    contactNo: {
-        type: Number,
-        require: (true , "Contact must  required")
-    },
+   
     userType:{
         type : String,
         enum: ["admin", "user"],

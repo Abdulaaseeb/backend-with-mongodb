@@ -1,29 +1,7 @@
 const { CourseResponse } = require("../helpers/helpers");
 const CourseModel = require("../models/courseModel");
 
-const courses = [
-    {
-        Title :' Web Development',
-        Description : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet repudiandae cumque, sint, tempora vel aliquam ipsa itaque, autem et nulla rerum. Blanditiis, iusto tempora voluptatem at voluptates esse deserunt odio rem voluptate ipsum ullam expedita, aspernatur voluptatibus animi eum cum aliquid natus dolorem adipisci. Animi, earum sequi. Sint, recusandae"
-    },
-    {
-        Title :'Graphic Designing',
-        Description : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet repudiandae cumque, sint, tempora vel aliquam ipsa itaque, autem et nulla rerum. Blanditiis, iusto tempora voluptatem at voluptates esse deserunt odio rem voluptate ipsum ullam expedita, aspernatur voluptatibus animi eum cum aliquid natus dolorem adipisci. Animi, earum sequi. Sint, recusandae"
-    },
-    {
-        Title :'Artificial Intellegence',
-        Description : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet repudiandae cumque, sint, tempora vel aliquam ipsa itaque, autem et nulla rerum. Blanditiis, iusto tempora voluptatem at voluptates esse deserunt odio rem voluptate ipsum ullam expedita, aspernatur voluptatibus animi eum cum aliquid natus dolorem adipisci. Animi, earum sequi. Sint, recusandae"
-    },
-    {
-        Title :'Document Operating Memory',
-        Description : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet repudiandae cumque, sint, tempora vel aliquam ipsa itaque, autem et nulla rerum. Blanditiis, iusto tempora voluptatem at voluptates esse deserunt odio rem voluptate ipsum ullam expedita, aspernatur voluptatibus animi eum cum aliquid natus dolorem adipisci. Animi, earum sequi. Sint, recusandae"
-    },
-    {
-        Title :'Hyper Text Markup Language',
-        Description : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet repudiandae cumque, sint, tempora vel aliquam ipsa itaque, autem et nulla rerum. Blanditiis, iusto tempora voluptatem at voluptates esse deserunt odio rem voluptate ipsum ullam expedita, aspernatur voluptatibus animi eum cum aliquid natus dolorem adipisci. Animi, earum sequi. Sint, recusandae"
-    },
-    // Add more courses here...
-];
+
 const CourseController = {
 
     get: async (req, res) => {

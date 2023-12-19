@@ -7,4 +7,5 @@ route.post('/login', AuthController.login)
 route.post('/signUp', AuthController.signUp)
 route.get('/checkAuth' , AuthController.checkAuth)
 
+
 module.exports = route
