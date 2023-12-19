@@ -104,7 +104,7 @@ const AuthController = {
         try {
             const result = await AuthModel.find()
             if (!result) {
-                res.status(404).send(CourseResponse(false, "Data Not found"))
+                res.status(404).send(CourseResponse(false, "Users Not found"))
             } else {
                 res.status(200).send(CourseResponse(true, "", result))
             }

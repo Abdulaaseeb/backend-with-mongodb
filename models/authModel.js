@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 const AuthScheema = mongoose.Schema({
     email: {
         type: String,
-        require: (true , "Email must be required")
+        require: (true , "Email must  required")
     },
     password: {
         type: String,
-        require: (true  , "Password must be required")
+        require: (true  , "Password must  required")
     },
     contactNo: {
         type: Number,
-        require: (true , "Contact must be required")
+        require: (true , "Contact must  required")
     },
     userType:{
         type : String,
@@ -18,13 +18,12 @@ const AuthScheema = mongoose.Schema({
     },
     firstName:{
         type:String,
-        require: (true , "FirstName must be required")
+        require: (true , "FirstName must  required")
 
     },
     lastName:{
         type:String,
-        require: (true , "LastName must be required")
-
+        require: (true , "LastName must  required")
     },
 
 

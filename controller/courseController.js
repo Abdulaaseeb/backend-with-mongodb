@@ -100,7 +100,7 @@ const CourseController = {
         const id = req.params.id
         try {
             const result = await CourseModel.findByIdAndDelete(id)
-            res.status(200).send(CourseResponse(true, "Deleted Successfully", result))
+            res.status(200).send(CourseResponse(true, "Deleted ", result))
         }
         catch (error) {
             res.status(404).send(CourseResponse(false, error, null))
